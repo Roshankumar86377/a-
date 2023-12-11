@@ -1,18 +1,20 @@
-/* WAP to print a pattern 
+/* WAP to print the pattern e.x.=
 1
-01
-010
-1010
-10101  */
+22
+333
+4444   */
 # include<stdio.h>
 int main(){
-    int i,n,j,k=1;
-    printf("n=\n");
-    scanf("%d",&n);
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=i; j++){
-            printf("%d", (k++)%2);
+    int n, i=1,j;
+    printf("Enter the value of n :\n");
+    scanf("%d", &n);
+    while(i<=n){
+        j=1;
+        while(j<=i){
+            printf("%d", i);
+            j++;
         }
+        i++;
         printf("\n");
     }
     return 0;
